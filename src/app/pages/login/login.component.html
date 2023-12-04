@@ -1,0 +1,45 @@
+<section class="w-full h-full"
+    [ngStyle]="{'background': 'url(../../../assets/img/fondo2.jpg)', 'background-size': 'cover'}">
+    <div class="w-full h-full flex align-items-center justify-content-center">
+        <div class="h-18rem w-3 xl:w-3  bg-white flex flex-column shadow-2 border-round align-items-center ">
+            <div class="h-3rem w-full flex align-items-center justify-content-center text-white border-round-top" [ngStyle]="{'background':'#223a86'}">
+              
+                    Ingreso a Portal
+
+            </div>
+            <form class="w-full h-full justify-content-center align-items-center mt-3" (ngSubmit)="login()" [formGroup]="loginForm">
+                <div class="flex flex-row w-full">
+                    
+                    <div class="flex align-items-center wp-2 justify-content-center">
+                        <h6 class="flex justify-content-star wp-7" [ngStyle]="{'color':'#223a86'}">Usuario</h6>
+                    </div>
+                    <div class="flex align-items-center wp-8 justify-content-center">
+                        <input class="wp-8" formControlName="email"  type="text" pInputText />
+                        
+                    </div>
+                    <div class="flex align-items-center justify-content-center">
+    
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <div class="flex wp-2 align-items-center wp-2 justify-content-center">
+    
+                        <h6 class="flex justify-content-star wp-7" [ngStyle]="{'color':'#223a86'}">Contraseña</h6>
+                    </div>
+                    <div class="flex wp-8 align-items-center justify-content-center">
+    
+                        <input class="wp-8" formControlName="password"  type="password" pInputText />
+                    </div>
+                    <div class=" flex align-items-center justify-content-center">
+    
+                    </div>
+                </div>
+                <div class="flex justify-content-center align-items-center mt-3">
+    
+                        <p-button type="submit" [ngStyle]="{'background-color':'#5291de'}" class="border-round" label="Ingresar"></p-button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
